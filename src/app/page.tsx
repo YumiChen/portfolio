@@ -145,7 +145,7 @@ export default function Home() {
   return (
     <>
       <Nav comps={comps.current} />
-      <main className='text-white font-roboto text-3xl leading-10 w-screen lg:w-[1280px] lg:mx-auto'>
+      <main className='overflow-x-hidden text-white font-roboto text-3xl leading-10 w-screen lg:w-[1280px] lg:mx-auto'>
         <div id="network-hint" className='hidden md:block fixed right-0 transform(translateX(100%)) bottom-6 opacity-0 z-30 text-4xl'>
           <SocialMedias/>
         </div>

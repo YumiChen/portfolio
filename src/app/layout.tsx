@@ -1,7 +1,6 @@
 import '/public/output.css'
 import 'swiper/element/css/effect-coverflow'
 
-import { GoogleTagManager } from '@next/third-parties/google'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -37,11 +36,10 @@ export default function RootLayout({
   return (
     <html lang="en" className='overflow-x-hidden'>
       <body 
-        className="relative transition-opacity duration-500 bg-teal-400 overflow-x-hidden w-screen"
+        className="relative transition-opacity duration-500 bg-teal-400 w-screen"
       >
         {children}
       </body>
-      <GoogleTagManager gtmId="GTM-PQW5CZCD" />
     </html>
   )
 }

@@ -78,6 +78,30 @@ const Experiences = () =>{
 
     return (<section className='md:min-h-[85vh] w-[100%] overflow-x-hidden overflow-y-auto px-10 md:px-40 pt-24'>
         <div id="line" className="company relative pl-4">
+          <h3 className="font-serif font-bold mt-10 text-4xl md:text-5xl md:mb-3">Sterling Brokers</h3>
+          <h4 className="text-lg">2024 Aug. - current</h4>
+          <div className={`highlight ${highlightStyle}`}></div>
+        </div>
+        <div className="flex flex-col items-start lg:flex-row-reverse">
+          <ul className="text-2xl md:text-3xl">
+            <li className='experience-item'>
+              <h5 className="text-yellow-200 font-bold mt-5">Accessible insurance enrollment platform</h5>
+              <p>Led frontend development for a responsive, token-based, scalable benefits platform serving hundreds of thousands of members. Ensured consistent UI across multiple products.</p>
+            </li>
+
+            <li className='experience-item'>
+              <h5 className="text-yellow-200 font-bold mt-5">Technical leadership & collaboration</h5>
+              <p>Directed full-stack architecture and system design decisions, collaborating with developers, designers, and product managers to deliver maintainable, high-quality solutions.</p>
+            </li>
+
+            <li className='experience-item'>
+              <h5 className="text-yellow-200 font-bold mt-5">Accessibility & engineering excellence</h5>
+              <p>Defined and upheld frontend best practices for accessibility (WCAG 2.2), performance, and testing. Organized an internal accessibility study group and integrated automated accessibility checks into CI/CD pipelines.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div id="line" className="company relative pl-4">
           <h3 className="font-serif font-bold mt-10 text-4xl md:text-5xl md:mb-3">LINE Corp.</h3>
           <h4 className="text-lg">2020 Oct. - 2023 Jul.</h4>
           <p className="text-lg">{"Product links: "}
@@ -87,6 +111,7 @@ const Experiences = () =>{
           </p>
           <div className={`highlight ${highlightStyle}`}></div>
         </div>
+
         <div className="flex flex-col lg:flex-row-reverse items-start">
           <SwiperLoader id={"line-swiper"} ratio={93} className="experience-item" conatinerClassName="lg:w-1/2 lg:space-x-2.5" keys={['news', 'article', 'event']} swiperOptions={lineSwiperOptions}>
             <Image src={LINE001Image} alt="LINE Today" width={500} height={378} className="my-10 mx-auto lg:ml-auto lg:mr-0" 
